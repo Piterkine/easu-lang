@@ -1,0 +1,31 @@
+let nums = [10, 15, 20, 25];
+
+// Add a number
+nums.push 30;
+
+// Remove last number
+nums.pop;
+
+// Print array length
+print nums.length;
+
+// Define function to double values
+function double x {
+  return x * 2;
+}
+nums.map double;
+
+// Print each value
+function show x {
+  print x;
+}
+nums.forEach show;
+
+// Filter even values
+function isEven x {
+  return x % 2 == 0;
+}
+nums.filter isEven;
+
+// Final print after filter
+nums.forEach show;
