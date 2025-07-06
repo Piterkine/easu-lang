@@ -22,5 +22,5 @@ It blends features from JavaScript and Python to make learning programming fun a
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/easu-lang.git
+   git clone https://github.com/Piterkine/easu-lang.git
    cd easu-lang
