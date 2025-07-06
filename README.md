@@ -1,5 +1,12 @@
 # 🧠 Easu Language
 
+--------------------------------------------------
+    Easu Programming Language v1.0
+    Developed by Shashank Shukla (2025)
+    GitHub: https://github.com/Piterkine/easu-lang
+--------------------------------------------------
+
+
 **Easu** is a beginner-friendly, custom programming language designed and interpreted in Python.  
 It blends features from JavaScript and Python to make learning programming fun and powerful.
 
@@ -20,7 +27,10 @@ It blends features from JavaScript and Python to make learning programming fun a
 
 ## 📦 Installation
 
-1. **Clone the repository**:
+ **Clone the repository**:
    ```bash
    git clone https://github.com/Piterkine/easu-lang.git
    cd easu-lang
+
+Crafted by Shashank Shukla, 2025
+From ideas to code — the Easu path.
