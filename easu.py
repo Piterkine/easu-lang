@@ -74,7 +74,7 @@ def evaluate(expression):
         elif op == '**': return left ** right
         elif op == '//': return left // right
         elif op == '==': return left == right
-        elif op == '!=': return left != right            
+        elif op == '!=': return left != right
         elif op == '<': return left < right
         elif op == '<=': return left <= right
         elif op == '>': return left > right
@@ -130,16 +130,13 @@ def run_lines(lines):
                 value = evaluate(expr)
                 variables[name] = value
 
-                elif '=' in line:
+        elif '=' in line and not line.startswith("if ") and not line.startswith("while ") and not line.startswith("for ") and not line.startswith("switch "):
             name, expr = line.split('=', 1)
             name = name.strip()
             expr = expr.strip()
             if name not in variables:
                 raise Exception(f"Variable '{name}' not declared with 'let'")
             variables[name] = evaluate(expr)
-
-
-
 
         elif line.startswith("print "):
             expr = line[6:]
@@ -270,6 +267,10 @@ def run_program_from_file(file_path):
 
 def run_demo_program():
     program = """
+    let a = 5;
+    a = a + 1;
+    print a;
+
     let nums = [1, 2, 3];
     nums.push 4;
     nums.pop;
